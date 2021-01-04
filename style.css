@@ -660,7 +660,7 @@ margin: 20px;
   font-size: 12px;
   line-height: 20px;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 800px)
+@media only screen and (min-device-width : 320px) and (max-device-width : 1500px)
 
 span.answer {
   color:#ccc;
