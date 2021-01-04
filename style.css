@@ -102,7 +102,7 @@ inner {
   padding-top:15px;
   font-size:30px;
   background: #ccc;
-  height: 400px;
+  height: 750px;
   font-family: 'Monaco', 'Courier New';
   text-align: left;
   font-size:13px;
@@ -110,9 +110,9 @@ inner {
 }
 
 #console {
-  width:270px;
+  width:470px;
   padding: 40px;
-  height: 270px;
+  height: 1070px;
   margin:0 auto;
   background: #383737;
 }
