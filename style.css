@@ -40,7 +40,7 @@ nav {
 	flex-wrap: wrap;
 }
 inner {
-  max-width: 1024px;
+  max-width: 2048px;
   margin: 0 auto;
 }
 .right {
