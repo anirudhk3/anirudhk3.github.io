@@ -1,0 +1,18 @@
+.Contactform
+{
+	width: 500px;
+	font-sixe: 30px;
+	margin: 50px;
+}
+.Contactform input,label,textarea, button
+{
+	width: 90%;
+	padding: 10px;
+	margin: 10px;
+}
+.submitbutton
+{
+	background: #1100df;
+	border-radius: 2px;
+	color: #fff;
+}
