@@ -1,10 +1,10 @@
-<?php
+<?php 
 //variable setting
 $name = $_REQUEST['name'];
 $email = $_REQUEST['Email'];
 $message = $_REQUEST['Message'];
  
-?>
+
 
 //check input fields
 if(empty($name) || empty($email) || empty($message))
