@@ -1,9 +1,9 @@
 <?php
 //lets get all form values
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
+$name = htmlspecialchars($_POST['name']);
+$email = htmlspecialchars($_POST['email']);
+$phone = htmlspecialchars($_POST['phone']);
+$message = htmlspecialchars($_POST['message']);
 
 if(!empty($email) && !empty($message)){ //if email and message is not empty
  if(filter_var($email, FILTER_VALIDATE_EMAIL)){ //if user entered email is valid
@@ -12,7 +12,7 @@ if(!empty($email) && !empty($message)){ //if email and message is not empty
    //merge all user values inside body variable.   
    $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage: $message\n\nRegards, \n$name";
    $sender = "From: $email"; //sender email
-    if (mail($receiver, $subject, $body, $sender)) { //mail() is a inbuilt php function to send mail
+   if (mail($receiver, $subject, $body, $sender)) { //mail() is a inbuilt php function to send mail
       echo "Your message has been sent";
   } else { 
   echo "Sorry, failed to send your message!";
